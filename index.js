@@ -24,15 +24,10 @@ const parseData = (data = testRequest) => {
 };
 
 express.use(bodyParser.json());
-//console.log(JSON.parse(`{"template":"my name is $name and I do $activities","inputString":"my name is Sahil and I do coding, gaming and singing","variables":[{"varName":"name","type":"string"},{"varName":"activities","type":"array","separator":",|and"}]}`));
 express.get('/', (req, res) => res.send('GOTCHA'));
-
 express.get('/parse', (req, res) => {
-	//let data = JSON.parse(`${req.body}`);
 	let out = parseData(req.body);
-	//res.status(200).send('Cool')
 	res.json(out);
-	//console.log('get : response : ', arrayExtracted);
 });
 
 express.listen(3000, console.log(`Started Jingling on 3000`));
