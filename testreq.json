@@ -1,0 +1,8 @@
+{
+    "template":"my name is $name and I do $activities",
+    "inputString":"my name is Sahil and I do coding, gaming and singing",
+    "variables":[
+        {"varName":"name","type":"string"},
+        {"varName":"activities","type":"array","separator":",|and"}
+    ]
+}
