@@ -37,10 +37,12 @@ Pass a template and input in form of json and it returns json with with parsed v
  
 ### Request JSON Variables
 
-#### Variable `template`
+#### Variable `"template"`
 ##### type : `<string>`
-Use `$variableName` format in string to tag variables. This will be used to pars
- > example `"He does $stuff"`.
-#### Variable `inputString`
+##### Usage :- Use `$variableName` format in string to tag variables. This will be used to parse `"inputString"`
+example `"He does $stuff"`.
+
+#### Variable `"inputString"`
 ##### type : `<string>`
+##### Usage : -
 
