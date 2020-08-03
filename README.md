@@ -1,6 +1,14 @@
 # Email-Parser
 Pass a template and input in form of json and it returns json with with parsed values.
 
+# Running
+
+```
+npm install
+
+npm run dev
+```
+
 ### Example 
 
 ##### Request JSON
