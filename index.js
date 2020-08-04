@@ -28,11 +28,8 @@ express.use(bodyParser.json());
 express.get('/', (req, res) => res.send('GOTCHA'));
 
 express.get('/parse', (req, res) => {
-	//let data = JSON.parse(`${req.body}`);
 	let out = parseData(req.body);
-	//res.status(200).send('Cool')
 	res.json(out);
-	//console.log('get : response : ', arrayExtracted);
 });
 
 express.listen(3000, console.log(`Started Jingling on 3000`));

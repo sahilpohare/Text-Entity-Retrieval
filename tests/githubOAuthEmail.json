@@ -1,0 +1,4 @@
+{
+    "inputString" : "Hey rahul81!\n\nA third-party OAuth application (Dockship) with user:email scope was recently authorized to access your account.\nVisit https://github.com/settings/connections/applications/ccb42a8e19665bcd148e for more information.\n\nTo see this and other security events for your account, visit https://github.com/settings/security\n\nIf you run into problems, please contact support by visiting https://github.com/contact\n\nThanks,\nThe GitHub Team",
+    "template" : "Hey $username!\n\nA third-party OAuth application ($application) with user:email scope was recently authorized to access your account.\nVisit $link for more information.\n\nTo see this and other security events for your account, visit https://github.com/settings/security\n\nIf you run into problems, please contact support by visiting https://github.com/contact\n\nThanks,\nThe GitHub Team"
+}

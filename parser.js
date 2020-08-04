@@ -12,12 +12,12 @@ function ExtractArraysAndStrings(input, template) {
 				case 'string':
 					out = { ...out, [val]: input[val] };
 					break;
-                    case 'array':
-                        out = { ...out, [val]: input[val].split(RegExp(varTemplate.separator)).map((val) => val.trim()) };
-                        break;
-                    default :
-                        out = { ...out, [val]: input[val] };
-                        break;
+                case 'array':
+                    out = { ...out, [val]: input[val].split(RegExp(varTemplate.separator)).map((val) => val.trim()) };
+                    break;
+                default :
+                    out = { ...out, [val]: input[val] };
+                    break;
 			}
 		} else {
 			out = { ...out, [val]: input[val] };

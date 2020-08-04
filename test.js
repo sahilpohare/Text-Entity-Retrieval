@@ -9,7 +9,8 @@ if (argv[0].match(/^([a-zA-Z0-9\s_\\.\-\(\):])+(.json)$/)) {
 
 	let rawdata = fs.readFileSync(argv[0]);
     let testData = JSON.parse(rawdata);
-
+    console.log('Input Email')
+    console.log(testData.inputString);
 	axios
 		.get('http://localhost:3000/parse', {
 			headers: {
@@ -18,6 +19,7 @@ if (argv[0].match(/^([a-zA-Z0-9\s_\\.\-\(\):])+(.json)$/)) {
 			data: JSON.stringify(testData)
 		})
 		.then((val) => {
+            console.log('\n Parsed Data')
 			console.log(val.data);
         });
 } else {
